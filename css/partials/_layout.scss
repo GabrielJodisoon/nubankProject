@@ -1,0 +1,53 @@
+// layout do projeto
+
+// Container device
+
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+// Mixins para o media query
+
+@mixin responsive($device){
+    @if $device == xl{
+        // para resolucoes acima de 1440px
+        @media screen and (min-width: $container-xl){
+            @content;
+
+        }
+    }
+
+    @else if $device == l{
+        // para resolucoes entre 1140px e 1440px
+        @media screen and (max-width: $container-xl) and (min-width: $container-l){
+            @content;
+
+        }
+    }
+
+    @else if $device == m{
+        // para resolucoes entre 960px e 1140px
+        @media screen and (max-width: $container-l) and (min-width: $container-m){
+            @content;
+
+        }
+    }
+
+    @else if $device == s{
+        // para resolucoes abaixo de 960px
+        @media screen and (max-width: $container-m){
+            @content;
+
+        }
+    }
+
+    @else if $device == xs{
+        // para resolucoes abaixo de 540px
+        @media screen and (max-width: $container-s){
+            @content;
+
+        }
+    }
+
+}
