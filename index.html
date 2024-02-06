@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <script src="js/svg-inject.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -31,7 +32,7 @@
         <!-- ========== NAVBAR DESKTOP ========== -->
 
         <nav class="navbar-desktop">
-            <div class="navbar-desktop-item-1"> 
+            <div class="navbar-desktop-item-1">
                 <div class="logo">
                     <a href="#"><img src="svg/logonu.svg" alt="Logo Nubank" onload="SVGInject(this)"></a>
                 </div>
@@ -61,14 +62,14 @@
                         </ul>
                     </li>
                 </ul>
-                
+
             </div>
             <div class="navbar-desktop-item-2">
                 <a href="" class="btn mr-2">Quero ser Nu</a>
                 <a href="">Login</a>
 
             </div>
-           
+
         </nav>
 
         <!-- ========== MENU MOBILE ========== -->
@@ -83,10 +84,14 @@
 
 
                 <li class="mt-3 flex-center">
-                    <a href=""><img src="svg/icon-facebook.svg" class="mx-1" alt="Icone Facebook" onload="SVGInject(this)"></a>
-                    <a href=""><img src="svg/icon-youtube.svg" class="mx-1" alt="Icone Youtube" onload="SVGInject(this)"></a>
-                    <a href=""><img src="svg/icon-instagram.svg" class="mx-1" alt="Icone Instagram" onload="SVGInject(this)"></a>
-                    <a href=""><img src="svg/icon-twitter.svg" class="mx-1" alt="Icone Twitter" onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-facebook.svg" class="mx-1" alt="Icone Facebook"
+                            onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-youtube.svg" class="mx-1" alt="Icone Youtube"
+                            onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-instagram.svg" class="mx-1" alt="Icone Instagram"
+                            onload="SVGInject(this)"></a>
+                    <a href=""><img src="svg/icon-twitter.svg" class="mx-1" alt="Icone Twitter"
+                            onload="SVGInject(this)"></a>
                 </li>
             </ul>
         </nav>
@@ -114,8 +119,10 @@
         </div>
         <div class="flex-item-3 flex-center div-card py-4">
             <img src="svg/icon-card.svg" class="icon-card-hero dropshadow" alt="icon card" onload="SVGInject(this)">
-            <img src="svg/icon-mobile.svg" class="icon-mobile-hero dropshadow" alt="icon mobile" onload="SVGInject(this)">
-            <img src="svg/icon-contactless.svg" class="icon-contactless-hero dropshadow" alt="Icon contact" onload="SVGInject(this)">
+            <img src="svg/icon-mobile.svg" class="icon-mobile-hero dropshadow" alt="icon mobile"
+                onload="SVGInject(this)">
+            <img src="svg/icon-contactless.svg" class="icon-contactless-hero dropshadow" alt="Icon contact"
+                onload="SVGInject(this)">
             <div class="card"></div>
 
         </div>
@@ -128,16 +135,16 @@
             <h5>Para todos</h5>
             <h2>Completo.</h2>
             <p>Resolva seu dia a dia pelo celular. Sem filas, sem anuidade, sem tarifas abusicas.
-                Cuide do seu dinheiro de um jeuito simples. Somos eficientes para voce usar seu 
+                Cuide do seu dinheiro de um jeuito simples. Somos eficientes para voce usar seu
                 dinheiro com o que realmente importa, sem tarifas de manutencao.
             </p>
 
             <ul class="list mt-3">
                 <li class="list-item bg-icon-check">
-                    <strong> 100% gratuito</strong> 
+                    <strong> 100% gratuito</strong>
                     <p>Isso mesmo, voce nao paga nada para abrir sua conta.</p>
                 </li>
-                <li class="list-item bg-icon-check" >
+                <li class="list-item bg-icon-check">
                     <strong>Sem taxas ou cobranca</strong>
                     <p>Nao se preocupe com taxas adicionasi ou anuidades</p>
                 </li>
@@ -163,10 +170,126 @@
     </section>
 
 
- 
+    <!-- ========== JS ========== -->
+
+    <section class="container">
+        <div class="best px-3 py-4">
+            <div class="flex-item-auto">
+                <h5>O melhor</h5>
+                <h2>Por que Nubank?</h2>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="svg/icon-cash.svg" class="icon w-auto" onload="SVGInject(this)" alt="icon cash">
+                <p class="mt-2 bold">Conta que rende mais que a poupança</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="svg/icon-transfer.svg" class="icon w-auto" onload="SVGInject(this)" alt="icon cash">
+                <p class="mt-2 bold">Transferencia e TEDs ilimitados</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="svg/icon-card.svg" class="icon w-auto" onload="SVGInject(this)" alt="icon cash">
+                <p class="mt-2 bold">Conta e cartao 100% gratuitos</p>
+            </div>
+            <div class="best-item flex-item-auto">
+                <img src="svg/icon-phone.svg" class="icon w-auto" onload="SVGInject(this)" alt="icon cash">
+                <p class="mt-2 bold">O melhor suporte 24h do Brasil</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ========== section slider ========== -->
+
+    <section class="box">
+        <h5>Depoimentos</h5>
+        <h2>Todos amam o Nu</h2>
+    </section>
+
+    <section class="container-swiper">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-1"></div>
+                    <h4>a Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum nam sequi animi laboriosam fugit corrupti temporibus
+                        qui nemo rerum eius deleniti nulla, unde dolorem incidunt
+                        perferendis natus dicta delectus assumenda.
+                    </p>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-2"></div>
+                    <h4>b Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum nam sequi animi laboriosam fugit corrupti temporibus
+                        qui nemo rerum eius deleniti nulla, unde dolorem incidunt
+                        perferendis natus dicta delectus assumenda.
+                    </p>
+
+                </div>
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-3"></div>
+                    <h4>c Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum nam sequi animi laboriosam fugit corrupti temporibus
+                        qui nemo rerum eius deleniti nulla, unde dolorem incidunt
+                        perferendis natus dicta delectus assumenda.
+                    </p>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-4"></div>
+                    <h4>d Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum nam sequi animi laboriosam fugit corrupti temporibus
+                        qui nemo rerum eius deleniti nulla, unde dolorem incidunt
+                        perferendis natus dicta delectus assumenda.
+                    </p>
+
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="photo-profile photo-5"></div>
+                    <h4>e Silva</h4>
+                    <p class="my-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Nostrum nam sequi animi laboriosam fugit corrupti temporibus
+                        qui nemo rerum eius deleniti nulla, unde dolorem incidunt
+                        perferendis natus dicta delectus assumenda.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="button-next"></div>
+        <div class="button-prev"></div>
+    </section>
+
+
 
     <!-- ========== JS ========== -->
     <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 'auto',
+            spaceBeteween: 40,
+            grabCursor: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.button-next',
+                prevEl: '.button-prev',
+            },
+        });
+    </script>
 
 </body>
+
 </html>
