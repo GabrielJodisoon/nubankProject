@@ -1046,6 +1046,10 @@ header {
   background-image: url("../../svg/icon-mobile.svg");
   background-size: cover;
   transition: 0.5s ease;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
   cursor: pointer;
   filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
 }
@@ -1079,6 +1083,36 @@ header {
   transform: scale(1.05);
 }
 
+.bg-icon-time::after {
+  background-image: url("../../svg/icon-time.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+.bg-icon-time:hover::after {
+  transform: scale(1.05);
+}
+
+.bg-icon-config::after {
+  background-image: url("../../svg/icon-config.svg");
+  background-size: cover;
+  transition: 0.5s ease;
+  width: 40px;
+  height: 40px;
+  top: 16px;
+  left: 8px;
+  cursor: pointer;
+  filter: drop-shadow(0px 16px 24px rgba(169, 80, 196, 0.25));
+}
+.bg-icon-config:hover::after {
+  transform: scale(1.05);
+}
+
 .icon {
   transition: 0.5s ease;
   cursor: pointer;
@@ -1099,7 +1133,6 @@ header {
   border-radius: 12px;
   transform-origin: center center;
   transform-style: preserve-3d;
-  background-color: red;
   animation: flip-card 12s linear infinite alternate, change-bg-card 12s linear infinite alternate;
 }
 
@@ -1249,5 +1282,94 @@ header {
   }
   70%, 100% {
     opacity: 0;
+  }
+}
+.fignu2-screen1 {
+  animation: fignu2-screen1 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen1 {
+  0%, 15% {
+    opacity: 1;
+  }
+  20%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen2 {
+  animation: fignu2-screen2 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen2 {
+  0%, 15% {
+    opacity: 0;
+  }
+  20%, 35% {
+    opacity: 1;
+  }
+  40%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen3 {
+  animation: fignu2-screen3 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen3 {
+  0%, 35% {
+    opacity: 0;
+  }
+  40%, 55% {
+    opacity: 1;
+  }
+  60%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen4 {
+  animation: fignu2-screen4 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen4 {
+  0%, 55% {
+    opacity: 0;
+  }
+  60%, 75% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+}
+.fignu2-screen5 {
+  animation: fignu2-screen5 18s ease infinite alternate;
+}
+
+@keyframes fignu2-screen5 {
+  0%, 75% {
+    opacity: 0;
+  }
+  80%, 100% {
+    opacity: 1;
+  }
+}
+.fignu2-icon1 {
+  animation: fignu2-icon-move 3s ease 0s infinite alternate;
+}
+
+.fignu2-icon3 {
+  animation: fignu2-icon-move 3s ease 1.2s infinite alternate;
+}
+
+.fignu2-icon5 {
+  animation: fignu2-icon-move 3s ease 2s infinite alternate;
+}
+
+@keyframes fignu2-icon-move {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  0% {
+    transform: translate3d(10px, -40px, 0);
   }
 }/*# sourceMappingURL=style.css.map */
