@@ -75,9 +75,21 @@ $container-s: 540px;
     position: relative;
 }
 
+.flex-top{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
 .flex-start{
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-spacebetween{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -262,4 +274,25 @@ $container-s: 540px;
     @include responsive(l){
         transform: translate(-50%, -50%) scale(1.5);
     }
+}
+
+.list{
+    list-style: none;
+
+    li{
+        margin-bottom: 12px;
+    }
+    a{
+        color: $secondary-light;
+
+    }
+}
+
+footer{
+    background: linear-gradient(220220.94deg, #a950c4 14.43%, #82269e 85.28%);
+}
+
+
+.bt-purple{
+    border-top: 1px solid $secondary-light;
 }
