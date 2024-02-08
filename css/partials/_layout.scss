@@ -71,6 +71,10 @@ $container-s: 540px;
     }
 }
 
+.relative{
+    position: relative;
+}
+
 .flex-start{
     display: flex;
     justify-content: flex-start;
@@ -236,5 +240,26 @@ $container-s: 540px;
         justify-content: center;
 
         align-items: center;
+    }
+}
+
+
+.bg-invite{
+    height: 100vh;
+
+    overflow: hidden;
+
+}
+.svg-invite{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    @include responsive(l){
+        transform: translate(-50%, -50%) scale(1.5);
     }
 }
