@@ -1437,4 +1437,33 @@ header {
   100% {
     fill-opacity: 0.4;
   }
+}
+.fignu4-letter-u, .fignu4-letter-n {
+  animation: fig4nu-letter 4s ease infinite alternate;
+  stroke-width: 4;
+  stroke-dasharray: 1 400;
+  stroke-opacity: 0;
+}
+
+@keyframes fig4nu-letter {
+  0% {
+    stroke-width: 4;
+    stroke-dasharray: 0 400;
+    stroke-opacity: 1;
+  }
+  60%, 100% {
+    stroke-width: 4;
+    stroke-dasharray: 400 0;
+    stroke-opacity: 1;
+  }
+}
+.button-app {
+  transition: 0.5s ease;
+}
+.button-app:hover {
+  scale: 1.02;
+  filter: drop-shadow(0px 51px 80px rgba(169, 80, 196, 0.08));
+  filter: drop-shadow(0px 15.375px 24.1177px rgba(169, 80, 196, 0.0521));
+  filter: drop-shadow(0px 6.38599px 10.017px rgba(169, 80, 196, 0.04));
+  filter: drop-shadow(0px 2.309px 3.62px rgba(169, 80, 196, 0.027));
 }/*# sourceMappingURL=style.css.map */
